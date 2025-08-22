@@ -81,6 +81,8 @@ func main() {
 
 ### Sample Output:
 ```
+map[amount_in_word:Eighty Six Euro And Five Cents conversion_rate:0.8605 from_amount:100 from_currency:USD result:success time_last_update_unix:1.755820801e+09 time_last_update_utc:Fri, 22 Aug 2025 00:00:01 +0000 time_next_update_unix:1.755907201e+09 time_next_update_utc:Sat, 23 Aug 2025 00:00:01 +0000 to_amount:86.05 to_currency:EUR]
+
 100 USD = 92.34 EUR
 Rate: 1 USD = 0.9234 EUR
 In words: ninety-two euros and thirty-four cents
