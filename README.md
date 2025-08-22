@@ -48,15 +48,17 @@ package main
 import (
     "fmt"
     "log"
-    converter "github.com/mymi14s/currency_converter"
-)
+    currency "github.com/mymi14s/currency_converter"
 
 func main() {
-    // Insert your API key here
-    currency := &currency.Converter{API_KEY: "your_api_key_here"}
-
-    // Convert 100.00 USD to EUR
-    result, err := converter.Convert("USD", 100.00, "EUR")
+    converter := &currency.Converter{API_KEY: "your_api_key_here"}
+	result, err := converter.Convert("USD", 100, "EUR")
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println(result)
+	}
+    
     if err != nil {
         log.Fatalf("Conversion failed: %v", err)
     }
